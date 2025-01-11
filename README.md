@@ -8,17 +8,14 @@ This project is designed to support development in Java 8 environments as a buil
 ### Gradle
 Add it in your root build.gradle at the end of repositories:
 ```gradle
-	dependencyResolutionManagement {
-		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-		repositories {
-			mavenCentral()
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		mavenCentral()
+		maven { url = 'https://jitpack.io' }
 	}
 ```
 ```gradle
 	dependencies {
-	        implementation 'com.github.ConnorChickenway:AdvancedSlimePaper-API:1.0'
+	        compileOnly 'com.github.ConnorChickenway:AdvancedSlimePaper-API:1.0'
 	}
 ```
 ### Maven
